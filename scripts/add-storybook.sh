@@ -4,3 +4,6 @@
 yarn
 yarn add web-component-analyzer
 npx storybook@latest init --type web_components --builder webpack5
+
+# temporarily bypass git commit hooks such as eslint & prettier
+# git commit -m "message" --no-verify
