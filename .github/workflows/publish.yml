@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Public Static Website
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
@@ -15,4 +15,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}/public
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+            path: "/public"
       - run: echo "🍏 This job's status is ${{ job.status }}."
