@@ -7,6 +7,8 @@ npx storybook@latest init --type web_components --builder webpack5
 
 # temporarily bypass git commit hooks such as eslint & prettier
 # git commit -m "message" --no-verify
+# OR remove git commit hooks
+# yarn remove husky
 
 # Create /docs
 # mkdir docs
